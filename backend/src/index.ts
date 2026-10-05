@@ -64,6 +64,7 @@ app.get("/me", (req: Request, res: Response) => {
 });
 
 // use routers — ขั้นที่ 2: ทุก API ขึ้นต้นด้วย /api/v3 (ตรงกับ VITE_API_URL ฝั่ง Frontend)
+// http://localhost:3000/api/v3
 app.use("/api/v3/users", userRouter_v3);
 app.use("/api/v3/students", studentRouter_v3);
 app.use("/api/v3/courses", courseRouter_v3);
